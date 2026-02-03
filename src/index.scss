@@ -25,12 +25,44 @@ a {
 
 a:hover {
   color: #5000ca;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
 
-p, a, h1, h2, h3, h4, h5, label, button {
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+label,
+button {
   color: white;
   font-family: "Lato", sans-serif;
+}
+
+/* Custom Resume Button Style */
+.resume-button {
+  background: linear-gradient(90deg, #5000ca 0%, #8800c7 100%) !important;
+  border-radius: 30px !important;
+  padding: 10px 25px !important;
+  font-weight: bold !important;
+  color: white !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(80, 0, 202, 0.4);
+  transition: all 0.3s ease-in-out !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(136, 0, 199, 0.6);
+    background: linear-gradient(90deg, #5a00e0 0%, #a000e0 100%) !important;
+  }
+
+  svg {
+    font-size: 1.2rem;
+  }
 }
 
 .navigation-bar {
@@ -50,7 +82,9 @@ p, a, h1, h2, h3, h4, h5, label, button {
 }
 
 .navigation-bar-responsive {
-  span, p {
+
+  span,
+  p {
     color: #0d1116;
     font-family: "Lato", sans-serif;
   }
@@ -99,13 +133,21 @@ p, a, h1, h2, h3, h4, h5, label, button {
     background-color: #f8f9fa;
   }
 
-  p, a, h1, h2, h3, h4, h5, label, button {
+  p,
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  label,
+  button {
     color: #0d1116;
   }
 
   a:hover {
     color: #5000ca;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
   }
 
   .navigation-bar svg {
@@ -116,8 +158,66 @@ p, a, h1, h2, h3, h4, h5, label, button {
     background-image: url("./assets/images/bg-light.png");
   }
 
+  .footer-section {
+    background-image: url("./assets/images/bg-light.png");
+
+    h1,
+    p {
+      color: #0d1116;
+    }
+
+    .social-icons svg {
+      color: #0d1116;
+    }
+
+    .copyright {
+      color: #0d1116;
+    }
+  }
+
+  #history,
+  #education {
+    background-image: url("./assets/images/bg-light.png");
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    span {
+      color: #0d1116;
+    }
+
+    .vertical-timeline-element-date {
+      color: #0d1116;
+    }
+  }
+
   .skills-container svg {
     color: #0d1116;
+  }
+
+  .contact-form {
+    .MuiOutlinedInput-root {
+      background-color: white;
+      color: #0d1116 !important;
+
+      fieldset {
+        border-color: rgba(0, 0, 0, 0.23);
+      }
+    }
+
+    .MuiInputBase-input {
+      color: #0d1116 !important;
+    }
+
+    .MuiInputLabel-root {
+      color: rgba(0, 0, 0, 0.6) !important;
+
+      &.Mui-focused {
+        color: #5000ca !important;
+      }
+    }
   }
 
   .chip {

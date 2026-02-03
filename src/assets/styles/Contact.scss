@@ -18,8 +18,37 @@
     color: white;
   }
 
-  fieldset {
-    background-color: white;
+  /* Override MUI TextField styles for dark theme */
+  .MuiOutlinedInput-root {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Transparent/Dark background */
+    color: white !important;
+    /* Text color */
+
+    fieldset {
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    &:hover fieldset {
+      border-color: white !important;
+    }
+
+    &.Mui-focused fieldset {
+      border-color: #5000ca !important;
+    }
+  }
+
+  .MuiInputLabel-root {
+    color: rgba(255, 255, 255, 0.7) !important;
+
+    &.Mui-focused {
+      color: #5000ca !important;
+    }
+  }
+
+  /* Target the input text specifically */
+  .MuiInputBase-input {
+    color: white !important;
   }
 }
 

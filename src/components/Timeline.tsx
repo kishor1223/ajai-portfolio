@@ -2,7 +2,7 @@ import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Timeline.scss'
 
@@ -14,52 +14,44 @@ function Timeline() {
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
-            contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            contentStyle={{ background: 'none', color: 'white', boxShadow: 'none' }}
+            contentArrowStyle={{ borderRight: '7px solid  transparent' }}
+            date="Aug 2025 - Present"
+            iconStyle={{ background: '#5000ca', color: 'white' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+            <h3 className="vertical-timeline-element-title">Full Stack Developer Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">Thikse Software Solutions, Puducherry</h4>
             <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
+              Developed API architecture, real-time notifications with WebSocket/Pusher, Redis caching, AWS S3 integration, and role-based access control.
             </p>
           </VerticalTimelineElement>
-          <VerticalTimelineElement
+          {/* <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2022"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            contentStyle={{ background: 'none', color: 'white', boxShadow: 'none' }}
+            contentArrowStyle={{ borderRight: '7px solid  transparent' }}
+            date="June 2025 - Aug 2025"
+            iconStyle={{ background: '#5000ca', color: 'white' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Programmer</h3>
+            <h4 className="vertical-timeline-element-subtitle">National Informatics Centre (NIC), Puducherry</h4>
             <p>
-              Frontend Development, Backend Development, User Experience, Team Leading
+              Worked on e-governance platforms, MySQL database normalization/optimization, and backend integration.
             </p>
-          </VerticalTimelineElement>
+          </VerticalTimelineElement> */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2021 - 2021"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            contentStyle={{ background: 'none', color: 'white', boxShadow: 'none' }}
+            contentArrowStyle={{ borderRight: '7px solid  transparent' }}
+            date="March 2023"
+            iconStyle={{ background: '#5000ca', color: 'white' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Staff Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Web Development Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">Twilight IT Solutions, Puducherry</h4>
             <p>
-              Full-stack Development, API Development, User Experience
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2020 - 2020"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
-            <p>
-              Automation, Data Governance, Statistical Analysis
+              Built dynamic web pages with HTML/CSS/PHP/MySQL, focusing on responsive design and database connectivity.
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>
